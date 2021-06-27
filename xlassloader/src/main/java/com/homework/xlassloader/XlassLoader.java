@@ -29,6 +29,9 @@ public class XlassLoader extends ClassLoader {
     method.invoke(instance);
   }
 
+  /**
+   * 类查找
+   */
   @Override
   protected Class<?> findClass(String name) throws ClassNotFoundException {
     // 如果支持包名, 则需要进行路径转换
